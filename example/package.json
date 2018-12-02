@@ -1,0 +1,23 @@
+{
+  "name": "react-native-fab-pie-example",
+  "version": "1.0.0",
+  "description": "Example Application to showcase react-native-fab-pie lib",
+  "author": "Giacomo Cerquone <cerquone96@homtail.it",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "expo": "^31.0.0",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "d3-shape": "1.2.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}

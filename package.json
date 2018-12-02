@@ -1,0 +1,48 @@
+{
+  "name": "react-native-fab-pie",
+  "version": "1.0.0",
+  "description": "Library to draw animated pie charts. Built with React Native ART + d3 and native animations.",
+  "main": "src/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "test",
+    "lint": "prettier --write ./src/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giacomocerquone/react-native-fab-pie.git"
+  },
+  "keywords": [
+    "react-native",
+    "pie-chart",
+    "animation",
+    "art",
+    "d3"
+  ],
+  "author": "Giacomo Cerquone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giacomocerquone/react-native-fab-pie/issues"
+  },
+  "homepage": "https://github.com/giacomocerquone/react-native-fab-pie#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-preset-expo": "^5.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.2.0",
+    "prettier": "1.15.3"
+  }
+}
