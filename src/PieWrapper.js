@@ -1,9 +1,7 @@
 import React from 'react';
 import { View, Animated } from 'react-native';
-import { ART, Easing } from 'react-native';
+import { Easing } from 'react-native';
 import PieChart from './PieChart';
-
-const { Surface, Group, Shape } = ART;
 
 const AnimatedPie = Animated.createAnimatedComponent(PieChart);
 
@@ -61,11 +59,13 @@ export default class PieWrapper extends React.PureComponent {
           pieStyle={pieStyle}
           outerRadius={outerRadius}
           innerRadius={innerRadius}
+          startAngle={startAngle}
           endAngle={animEndAngle}
+          padAngle={padAngle}
           valueAccessor={valueAccessor}
           sort={sort}
           elevation={outerElevation}
-          indexToFocus={this.state.indexToFocus}
+          indexToFocus={indexToFocus}
           data={data}
         />
         {React.Children.map(

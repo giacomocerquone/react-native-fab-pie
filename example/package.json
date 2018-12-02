@@ -14,10 +14,6 @@
     "expo": "^31.0.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
-    "d3-shape": "1.2.2"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
+    "react-native-fab-pie": "file:.."
   }
 }

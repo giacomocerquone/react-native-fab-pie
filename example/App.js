@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import Pie from '../src/PieWrapper';
+import Pie from 'react-native-fab-pie';
 import MyLabels from './MyLabels';
 
 export default class MyApp extends React.PureComponent {

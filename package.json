@@ -32,6 +32,9 @@
     "url": "https://github.com/giacomocerquone/react-native-fab-pie/issues"
   },
   "homepage": "https://github.com/giacomocerquone/react-native-fab-pie#readme",
+  "dependencies": {
+    "d3-shape": "1.2.2"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "babel-preset-expo": "^5.0.0",
@@ -43,6 +46,11 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "husky": "^1.2.0",
-    "prettier": "1.15.3"
+    "prettier": "1.15.3",
+    "react": "16.5.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   }
 }
