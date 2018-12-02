@@ -5,7 +5,7 @@ export default function MyLabels({ data, focus }) {
   return (
     <View style={styles.container}>
       {data.map((arc, index) => (
-        <TouchableNativeFeedback onPress={() => focus(index)}>
+        <TouchableNativeFeedback onPress={() => focus(index)} key={index}>
           <Text>{arc.title}</Text>
         </TouchableNativeFeedback>
       ))}
