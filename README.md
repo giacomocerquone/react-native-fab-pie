@@ -1,16 +1,15 @@
 # React Native Fab Pie
 
-A very small library to help drawing very beautiful animated pie charts. It uses React Native ART, d3 and native animations.
+A very small library to help drawing beautiful animated pie charts. It uses React Native ART, d3 and native animations.
 <br>
 **Compatible with expo**
 
 ## Playground
 
-Here there is the expo snack you can play with:
+Here there is the expo snack you can play with: https://snack.expo.io/@giacomocerquone/react-native-fab-pie
 
 ## Todo
 
-- snack
 - doc
 - prop-types
 - tests

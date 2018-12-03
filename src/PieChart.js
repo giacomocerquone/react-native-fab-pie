@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
-import { View, Animated } from 'react-native';
+import { View } from 'react-native';
 import * as shape from 'd3-shape';
 
-import { ART, Easing } from 'react-native';
+import { ART } from 'react-native';
 
 const { Surface, Group, Shape } = ART;
 

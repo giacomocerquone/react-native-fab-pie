@@ -47,7 +47,8 @@
     "eslint-plugin-react": "^7.11.1",
     "husky": "^1.2.0",
     "prettier": "1.15.3",
-    "react": "16.5.0"
+    "react": "16.5.0",
+    "react-native": "0.57.4"
   },
   "peerDependencies": {
     "react": "*",
