@@ -32,7 +32,6 @@ export default class PieChart extends PureComponent {
   render() {
     const {
       data,
-      dataPoints,
       innerRadius,
       outerRadius,
       padAngle,
@@ -41,6 +40,7 @@ export default class PieChart extends PureComponent {
       indexToFocus,
       startAngle,
       endAngle,
+      animate,
       valueAccessor = ({ item }) => item.value,
       sort = (a, b) => a + b,
     } = this.props;
@@ -89,12 +89,7 @@ export default class PieChart extends PureComponent {
       .value(d => valueAccessor({ item: d }))
       .sort(sort)
       .startAngle(startAngle || 0)
-      .endAngle(endAngle || Math.PI * 2)(data);
-
-    const slices = pieSlices.map((slice, index) => ({
-      ...slice,
-      pieCentroid: arcs[index].centroid(slice),
-    }));
+      .endAngle(animate ? endAngle : Math.PI * 2)(data);
 
     return (
       <View style={pieStyle} onLayout={this._onLayout}>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Animated } from 'react-native';
-import { Easing } from 'react-native';
+import { View, Animated, Easing } from 'react-native';
 import PieChart from './PieChart';
 
 const AnimatedPie = Animated.createAnimatedComponent(PieChart);
@@ -12,13 +11,23 @@ export default class PieWrapper extends React.PureComponent {
     indexToFocus: null,
   };
 
-  componentDidMount() {
-    Animated.timing(this.state.endAngle, {
-      toValue: 2,
-      duration: 1000,
-      easing: Easing.inOut(Easing.quad),
-    }).start();
-  }
+  reset = () =>
+    new Promise(resolve => {
+      Animated.timing(this.state.endAngle, {
+        toValue: 0,
+        duration: 1000,
+        easing: Easing.inOut(Easing.quad),
+      }).start(() => resolve());
+    });
+
+  animate = () =>
+    new Promise(resolve => {
+      Animated.timing(this.state.endAngle, {
+        toValue: 2,
+        duration: 1000,
+        easing: Easing.inOut(Easing.quad),
+      }).start(() => resolve());
+    });
 
   focus = indexToFocus => {
     Animated.timing(this.state.outerElevation, {
@@ -38,7 +47,6 @@ export default class PieWrapper extends React.PureComponent {
   render() {
     const {
       data,
-      dataPoints,
       innerRadius,
       outerRadius,
       padAngle,
@@ -48,10 +56,11 @@ export default class PieWrapper extends React.PureComponent {
       startAngle,
       valueAccessor,
       sort,
+      animate,
     } = this.props;
     const { outerElevation, indexToFocus, endAngle } = this.state;
 
-    const animEndAngle = Animated.multiply(endAngle, Math.PI);
+    const animEndAngle = endAngle ? Animated.multiply(endAngle, Math.PI) : 0;
 
     return (
       <View style={containerStyle}>
@@ -64,6 +73,7 @@ export default class PieWrapper extends React.PureComponent {
           padAngle={padAngle}
           valueAccessor={valueAccessor}
           sort={sort}
+          animate={animate}
           elevation={outerElevation}
           indexToFocus={indexToFocus}
           data={data}
