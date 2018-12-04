@@ -9,7 +9,9 @@ A very small library to help drawing beautiful animated pie charts. It uses Reac
 Here there is the expo snack you can play with: https://snack.expo.io/@giacomocerquone/react-native-fab-pie
 
 ## Demo
-![](https://github.com/giacomocerquone/react-native-fab-pie/blob/master/demo/rn-fab-pie.gif?raw=true)
+**The android studio tool I used to record the emulator and the slow computer on which I run the demo, made this appear laggy, but I assure you it's not. Try it yourself with the snack**
+
+<img src="https://github.com/giacomocerquone/react-native-fab-pie/blob/master/demo/rn-fab-pie.gif?raw=true" alt="drawing" width="300"/>
 
 ## Todo
 
