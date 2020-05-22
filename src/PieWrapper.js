@@ -17,6 +17,7 @@ export default class PieWrapper extends React.PureComponent {
         toValue: 0,
         duration: 1000,
         easing: Easing.inOut(Easing.quad),
+        useNativeDriver:false,
       }).start(() => resolve());
     });
 
@@ -26,6 +27,7 @@ export default class PieWrapper extends React.PureComponent {
         toValue: 2,
         duration: 1000,
         easing: Easing.inOut(Easing.quad),
+        useNativeDriver:false,
       }).start(() => resolve());
     });
 
@@ -34,12 +36,14 @@ export default class PieWrapper extends React.PureComponent {
       toValue: 0,
       duration: 200,
       easing: Easing.inOut(Easing.quad),
+      useNativeDriver:false,
     }).start(() => {
       this.setState({ indexToFocus });
       Animated.timing(this.state.outerElevation, {
         toValue: 10,
         duration: 200,
         easing: Easing.inOut(Easing.quad),
+        useNativeDriver:false,
       }).start();
     });
   };
