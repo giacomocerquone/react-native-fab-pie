@@ -34,7 +34,7 @@
   "homepage": "https://github.com/giacomocerquone/react-native-fab-pie#readme",
   "dependencies": {
     "d3-shape": "1.2.2",
-    "@react-native-community/art": "^1.2.0"
+    "@react-native-community/art": "^1.2.0" 
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
