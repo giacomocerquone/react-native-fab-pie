@@ -1,10 +1,7 @@
 import React, { PureComponent } from 'react';
 import { View } from 'react-native';
 import * as shape from 'd3-shape';
-
-import { ART } from 'react-native';
-
-const { Surface, Group, Shape } = ART;
+import { Surface, Group, Shape } from '@react-native-community/art';
 
 export default class PieChart extends PureComponent {
   state = {
